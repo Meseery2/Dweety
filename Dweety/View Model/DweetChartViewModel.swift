@@ -55,7 +55,6 @@ class DweetChartViewModel {
                                     }
                                     completion?(nil)
             }, ifFailed: { (error) in
-                // Show Error
                 completion?(error)
         })
     }
@@ -114,6 +113,5 @@ extension DweetChartViewModel {
 
             self.chartViewData?.groupBars(fromX: Double(0), groupSpace: 0.08, barSpace: 0.03)
             self.chartView?.notifyDataSetChanged()
-        
     }
 }
