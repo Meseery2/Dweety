@@ -11,6 +11,15 @@
 		7EEE6453A6FCFCC2A356A25F /* Pods_DweetyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512FB0F65F03430DA38FB7D9 /* Pods_DweetyTests.framework */; };
 		A24B5AB6213DD05600B9B899 /* DWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B5AB5213DD05600B9B899 /* DWViewController.swift */; };
 		A24B5AB9213DD92E00B9B899 /* DweetChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B5AB8213DD92E00B9B899 /* DweetChartViewModel.swift */; };
+		A278A0A4213DFDDF0010FE52 /* DweetAPITextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A278A0A3213DFDDF0010FE52 /* DweetAPITextCase.swift */; };
+		A278A0A5213DFE0B0010FE52 /* DweetAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFCFBE213CB770008DF926 /* DweetAPIWorker.swift */; };
+		A278A0A6213DFE0B0010FE52 /* DweetEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFCFC1213CD619008DF926 /* DweetEndpoint.swift */; };
+		A278A0A7213DFE0B0010FE52 /* DWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC6A2213A019D003EDA4C /* DWColors.swift */; };
+		A278A0A8213DFE0B0010FE52 /* DWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B5AB5213DD05600B9B899 /* DWViewController.swift */; };
+		A278A0A9213DFE0B0010FE52 /* DweetChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFCFBB213B8397008DF926 /* DweetChartViewController.swift */; };
+		A278A0AA213DFE0B0010FE52 /* DweetResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC69D2139F77A003EDA4C /* DweetResponseModel.swift */; };
+		A278A0AB213DFE0B0010FE52 /* DweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC69F2139FCD8003EDA4C /* DweetModel.swift */; };
+		A278A0AC213DFE0B0010FE52 /* DweetChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24B5AB8213DD92E00B9B899 /* DweetChartViewModel.swift */; };
 		A27AB7DF2139D8BE002C9826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7DE2139D8BE002C9826 /* AppDelegate.swift */; };
 		A27AB7E42139D8BE002C9826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E22139D8BE002C9826 /* Main.storyboard */; };
 		A27AB7E62139D8C0002C9826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E52139D8C0002C9826 /* Assets.xcassets */; };
@@ -52,6 +61,7 @@
 		9382C86FDB43CD5B8C33A544 /* Pods-Dweety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dweety.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dweety/Pods-Dweety.release.xcconfig"; sourceTree = "<group>"; };
 		A24B5AB5213DD05600B9B899 /* DWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWViewController.swift; sourceTree = "<group>"; };
 		A24B5AB8213DD92E00B9B899 /* DweetChartViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DweetChartViewModel.swift; sourceTree = "<group>"; };
+		A278A0A3213DFDDF0010FE52 /* DweetAPITextCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DweetAPITextCase.swift; sourceTree = "<group>"; };
 		A27AB7DB2139D8BE002C9826 /* Dweety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dweety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27AB7DE2139D8BE002C9826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A27AB7E32139D8BE002C9826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -156,6 +166,7 @@
 		A27AB7F22139D8C0002C9826 /* DweetyTests */ = {
 			isa = PBXGroup;
 			children = (
+				A278A0A3213DFDDF0010FE52 /* DweetAPITextCase.swift */,
 				A27AB7F52139D8C0002C9826 /* Info.plist */,
 			);
 			path = DweetyTests;
@@ -298,6 +309,7 @@
 					};
 					A27AB7EE2139D8C0002C9826 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 						TestTargetID = A27AB7DA2139D8BE002C9826;
 					};
 					A27AB7F92139D8C0002C9826 = {
@@ -451,6 +463,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A278A0A6213DFE0B0010FE52 /* DweetEndpoint.swift in Sources */,
+				A278A0A8213DFE0B0010FE52 /* DWViewController.swift in Sources */,
+				A278A0A5213DFE0B0010FE52 /* DweetAPIWorker.swift in Sources */,
+				A278A0AC213DFE0B0010FE52 /* DweetChartViewModel.swift in Sources */,
+				A278A0AA213DFE0B0010FE52 /* DweetResponseModel.swift in Sources */,
+				A278A0A7213DFE0B0010FE52 /* DWColors.swift in Sources */,
+				A278A0AB213DFE0B0010FE52 /* DweetModel.swift in Sources */,
+				A278A0A4213DFDDF0010FE52 /* DweetAPITextCase.swift in Sources */,
+				A278A0A9213DFE0B0010FE52 /* DweetChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +678,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = DweetyTests/Info.plist;
@@ -667,6 +689,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.meseery.DweetyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dweety.app/Dweety";
@@ -679,6 +702,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = DweetyTests/Info.plist;
