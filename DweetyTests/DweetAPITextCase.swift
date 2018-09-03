@@ -16,10 +16,9 @@ class DweetAPITextCase: XCTestCase {
         let successRetrieval = expectation(description: "Dweets retrieved successfully")
         worker.getDweets(for:thing ,
                          ifSucceeded: { (dweets) in
-            XCTAssert(dweets?.first?.thing == thing, "Dweets retrieved for thing \(thing)")
-            XCTAssert(dweets != nil, "Dweets retrieved successfully")
             successRetrieval.fulfill()
         }) { (error) in
+            XCTFail("Dweets failed to be retrieved with error \(error)")
         }
         waitForExpectations(timeout: 30) { (error) in
             if let error = error {
