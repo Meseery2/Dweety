@@ -69,6 +69,7 @@ extension DweetChartViewModel {
         chartView?.backgroundColor = UIColor.mainColor
         chartView?.animate(xAxisDuration: 3, yAxisDuration: 3)
         chartView?.noDataTextColor = .white
+        chartView?.xAxis.drawGridLinesEnabled = false
     }
     
     fileprivate func setupGraphViewData() {
