@@ -78,7 +78,7 @@ extension DweetGraphViewModel {
     }
     
     
-    fileprivate func updateGraph(withDweets dweets: [DweetModel]) {
+    fileprivate func updateGraph(withDweets dweets: [Dweet]) {
         for (i,dweet) in dweets.enumerated() {
             let temperatureEntry = BarChartDataEntry.init(x: Double(i), y: dweet.content?.temperature ?? 0.0)
             let _ = temperatureDataSet?.addEntryOrdered(temperatureEntry)

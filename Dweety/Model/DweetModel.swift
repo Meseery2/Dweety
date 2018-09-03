@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct DweetModel: Codable {
+struct Dweet: Codable {
     var thing : String?
     var content : DweetData?
 }

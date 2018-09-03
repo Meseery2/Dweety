@@ -1,12 +1,11 @@
 platform :ios, '10.0'
 
 target 'Dweety' do
-  use_frameworks!
-
-    pod 'Charts'
-    pod 'Socket.IO-Client-Swift'
+    use_frameworks!
+    # Networking Engine
     pod 'Alamofire'
-    pod 'Faraday'
+    # Charts & Graph
+    pod 'Charts'
 
   target 'DweetyTests' do
     inherit! :search_paths

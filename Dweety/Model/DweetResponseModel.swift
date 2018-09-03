@@ -9,7 +9,7 @@
 import Foundation
 
 struct DweetResponseModel: Codable {
-    var with : [DweetModel]?
+    var with : [Dweet]?
 }
 
 

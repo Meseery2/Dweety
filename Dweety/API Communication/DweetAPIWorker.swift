@@ -8,7 +8,7 @@
 
 import Alamofire
 
-typealias dweetsOnSuccessCallback = ([DweetModel]?)->Void
+typealias dweetsOnSuccessCallback = ([Dweet]?)->Void
 typealias dweetsOnFailureCallback = (Error)->Void
 
 struct DweetAPIWorker {
