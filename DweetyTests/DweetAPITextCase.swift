@@ -11,18 +11,20 @@ import XCTest
 class DweetAPITextCase: XCTestCase {
     
     func testDweetAPIWorker()  {
-         let worker = DweetAPIWorker()
+        let worker = DweetAPIWorker()
+        let thing = "nsemi"
         let successRetrieval = expectation(description: "Dweets retrieved successfully")
+        worker.getDweets(for:thing ,
+                         ifSucceeded: { (dweets) in
+            XCTAssert(dweets?.first?.thing == thing, "Dweets retrieved for thing \(thing)")
+            XCTAssert(dweets != nil, "Dweets retrieved successfully")
+            successRetrieval.fulfill()
+        }) { (error) in
+        }
         waitForExpectations(timeout: 30) { (error) in
             if let error = error {
                 print("Error: \(error.localizedDescription)")
             }
-        }
-        worker.getDweets(for: "nsemi",
-                         ifSucceeded: { (dweets) in
-            XCTAssert(dweets != nil, "Dweets retrieved successfully")
-            successRetrieval.fulfill()
-        }) { (error) in
         }
     }
     
