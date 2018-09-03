@@ -1,6 +1,0 @@
-framework module Faraday {
-  umbrella header "Faraday-umbrella.h"
-
-  export *
-  module * { export * }
-}

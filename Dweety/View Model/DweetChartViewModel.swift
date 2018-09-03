@@ -7,74 +7,95 @@
 //
 import Charts
 
-class DweetGraphViewModel {
+typealias completionCallback = (Error?) -> Void
+
+class DweetChartViewModel {
     // MARK: - Section Dependencies.
     let thing : String = "nsemi"
     var dweetAPIworker : DweetAPIWorker?
     
-    var graphView : ChartViewBase?
-    var graphViewData : BarChartData?
+    var chartView : ChartViewBase?
+    var chartViewData : BarChartData?
     var temperatureDataSet,xDataSet,yDataSet,zDataSet : BarChartDataSet?
 
     // MARK: - Section Initialization.
-    init(withGraphView graphView:ChartViewBase) {
-        self.graphView = graphView
+    init(withChartView chartView:ChartViewBase) {
+        self.chartView = chartView
         setupGraphView()
         setupGraphViewData()
     }
     
     // MARK: - Section Dweeting.
-    public func startDweeting(meanwhile meanWhileCallback:() -> Void,
-                              onCompletion completion:@escaping (Error?)->Void) {
+    public func getDweets(meanwhile
+        meanWhileCallback:() -> Void,
+                              onCompletion
+        completion:@escaping (Error?)->Void) {
         meanWhileCallback()
-        dweetAPIworker = DweetAPIWorker()
+        getDweetsUpdateGraph { [weak self] (error) in
+            completion(error)
+            self?.scheduleNextBatch()
+        }
+    }
+    
+    public func scheduleNextBatch() {
+        Timer.scheduledTimer(withTimeInterval: 60, repeats: true) {[weak self] _ in
+            self?.getDweetsUpdateGraph()
+        }
+    }
+    
+    private func getDweetsUpdateGraph(onCompletion
+        completion : completionCallback? = nil) {
+        if  dweetAPIworker == nil{
+            dweetAPIworker = DweetAPIWorker()
+        }
         dweetAPIworker?.getDweets(for:thing,
                                   ifSucceeded: {[weak self] (dweets) in
-            if let dweets = dweets {
-                self?.updateGraph(withDweets: dweets)
-            }
-            completion(nil)
-        }, ifFailed: { (error) in
-            // Show Error
-            completion(error)
+                                    if let dweets = dweets {
+                                        self?.updateGraph(withDweets: dweets)
+                                    }
+                                    completion?(nil)
+            }, ifFailed: { (error) in
+                // Show Error
+                completion?(error)
         })
     }
 }
 
 // MARK: - Section Private Operations.
-extension DweetGraphViewModel {
+extension DweetChartViewModel {
     fileprivate func setupGraphView(){
-        graphView?.chartDescription?.text = "Dweets Data"
-        graphView?.chartDescription?.font = .systemFont(ofSize: 16, weight: .light)
-        graphView?.backgroundColor = UIColor.mainColorDarker
-        graphView?.animate(xAxisDuration: 3, yAxisDuration: 3)
+        chartView?.chartDescription?.text = "Dweets Data"
+        chartView?.chartDescription?.font = .systemFont(ofSize: 16, weight: .light)
+        chartView?.backgroundColor = UIColor.mainColor
+        chartView?.animate(xAxisDuration: 3, yAxisDuration: 3)
+        chartView?.noDataTextColor = .white
     }
     
     fileprivate func setupGraphViewData() {
-        graphViewData = BarChartData.init()
-        graphViewData?.setValueFont(.systemFont(ofSize: 14, weight: .light))
-        graphViewData?.barWidth = 0.4
+        chartViewData = BarChartData.init()
+        chartViewData?.setValueFont(.systemFont(ofSize: 14, weight: .light))
+        chartViewData?.barWidth = 0.09
         
         temperatureDataSet = BarChartDataSet.init()
         temperatureDataSet?.label = "Temperature"
         temperatureDataSet?.setColor(UIColor.white)
-        graphViewData?.addDataSet(temperatureDataSet)
+        chartViewData?.addDataSet(temperatureDataSet)
         
         xDataSet = BarChartDataSet.init()
         xDataSet?.label = "X"
         xDataSet?.setColor(UIColor.grayColor)
-        graphViewData?.addDataSet(xDataSet)
+        chartViewData?.addDataSet(xDataSet)
         
         yDataSet = BarChartDataSet.init()
         yDataSet?.label = "Y"
         yDataSet?.setColor(UIColor.redColor)
-        graphViewData?.addDataSet(yDataSet)
+        chartViewData?.addDataSet(yDataSet)
         
         zDataSet = BarChartDataSet.init()
         zDataSet?.label = "Z"
         zDataSet?.setColor(UIColor.greenColor)
-        graphViewData?.addDataSet(zDataSet)
-        graphView?.data = graphViewData
+        chartViewData?.addDataSet(zDataSet)
+        chartView?.data = chartViewData
     }
     
     
@@ -89,8 +110,9 @@ extension DweetGraphViewModel {
             let zEntry = BarChartDataEntry.init(x: Double(i), y: dweet.content?.accelerometerData?.z ?? 0.0)
             let _ = zDataSet?.addEntryOrdered(zEntry)
         }
+
+            self.chartViewData?.groupBars(fromX: Double(0), groupSpace: 0.08, barSpace: 0.03)
+            self.chartView?.notifyDataSetChanged()
         
-        graphViewData?.groupBars(fromX: Double(0), groupSpace: 0.08, barSpace: 0.03)
-        graphView?.notifyDataSetChanged()
     }
 }

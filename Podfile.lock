@@ -3,32 +3,20 @@ PODS:
   - Charts (3.0.5):
     - Charts/Core (= 3.0.5)
   - Charts/Core (3.0.5)
-  - Faraday (0.6.3)
-  - Socket.IO-Client-Swift (13.2.1):
-    - Starscream (~> 3.0.2)
-  - Starscream (3.0.5)
 
 DEPENDENCIES:
   - Alamofire
   - Charts
-  - Faraday
-  - Socket.IO-Client-Swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Charts
-    - Faraday
-    - Socket.IO-Client-Swift
-    - Starscream
 
 SPEC CHECKSUMS:
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Charts: 45cdc985b764c838b35ee47eb1365d15735f6d1a
-  Faraday: cf9110f2a569de69d14044eade3ffc9faff90ad2
-  Socket.IO-Client-Swift: b94943e2fb916fe2f95244b9ed21828634002280
-  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
 
-PODFILE CHECKSUM: b16347343d1acfcd8f2b533152a23d38614e0b71
+PODFILE CHECKSUM: 820dfc40300d96cceeb6c1cc1804309b6fc8d9af
 
 COCOAPODS: 1.5.3
