@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7CD7698E51B95018AFE133 /* Pods_DweetyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F15001A835AF74CAA2E986 /* Pods_DweetyUITests.framework */; };
+		7EEE6453A6FCFCC2A356A25F /* Pods_DweetyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 512FB0F65F03430DA38FB7D9 /* Pods_DweetyTests.framework */; };
 		A27AB7DF2139D8BE002C9826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7DE2139D8BE002C9826 /* AppDelegate.swift */; };
-		A27AB7E12139D8BE002C9826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7E02139D8BE002C9826 /* ViewController.swift */; };
 		A27AB7E42139D8BE002C9826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E22139D8BE002C9826 /* Main.storyboard */; };
 		A27AB7E62139D8C0002C9826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E52139D8C0002C9826 /* Assets.xcassets */; };
 		A27AB7E92139D8C0002C9826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E72139D8C0002C9826 /* LaunchScreen.storyboard */; };
 		A27AB7F42139D8C0002C9826 /* DweetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7F32139D8C0002C9826 /* DweetyTests.swift */; };
 		A27AB7FF2139D8C0002C9826 /* DweetyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7FE2139D8C0002C9826 /* DweetyUITests.swift */; };
+		A2BAC69E2139F77A003EDA4C /* DweetResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC69D2139F77A003EDA4C /* DweetResponseModel.swift */; };
+		A2BAC6A02139FCD8003EDA4C /* DweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC69F2139FCD8003EDA4C /* DweetModel.swift */; };
+		A2BAC6A3213A019D003EDA4C /* DWColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC6A2213A019D003EDA4C /* DWColors.swift */; };
+		A2BAC6A5213A0366003EDA4C /* DweetGraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC6A4213A0366003EDA4C /* DweetGraphViewModel.swift */; };
+		A2DFCFBC213B8397008DF926 /* DweetChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFCFBB213B8397008DF926 /* DweetChartViewController.swift */; };
+		A2DFCFBF213CB770008DF926 /* DweetAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFCFBE213CB770008DF926 /* DweetAPIWorker.swift */; };
+		A2DFCFC2213CD619008DF926 /* DweetEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DFCFC1213CD619008DF926 /* DweetEndpoint.swift */; };
+		D5D56E85472281CC3A1BA1B1 /* Pods_Dweety.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE157FE0621BA8DF5CEFBBB6 /* Pods_Dweety.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21D039E5279475EB28914736 /* Pods-DweetyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DweetyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DweetyUITests/Pods-DweetyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F245DD78DF084CD12D64D11 /* Pods-DweetyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DweetyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DweetyTests/Pods-DweetyTests.release.xcconfig"; sourceTree = "<group>"; };
+		512FB0F65F03430DA38FB7D9 /* Pods_DweetyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DweetyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60F15001A835AF74CAA2E986 /* Pods_DweetyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DweetyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		639FFDEEF1DE56938AAF97CB /* Pods-DweetyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DweetyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DweetyTests/Pods-DweetyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F2140B50E1D5CC7F8759136 /* Pods-DweetyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DweetyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DweetyUITests/Pods-DweetyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9382C86FDB43CD5B8C33A544 /* Pods-Dweety.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dweety.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dweety/Pods-Dweety.release.xcconfig"; sourceTree = "<group>"; };
 		A27AB7DB2139D8BE002C9826 /* Dweety.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dweety.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27AB7DE2139D8BE002C9826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A27AB7E02139D8BE002C9826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A27AB7E32139D8BE002C9826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A27AB7E52139D8C0002C9826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A27AB7E82139D8C0002C9826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +62,15 @@
 		A27AB7FA2139D8C0002C9826 /* DweetyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DweetyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27AB7FE2139D8C0002C9826 /* DweetyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetyUITests.swift; sourceTree = "<group>"; };
 		A27AB8002139D8C0002C9826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BAC69D2139F77A003EDA4C /* DweetResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetResponseModel.swift; sourceTree = "<group>"; };
+		A2BAC69F2139FCD8003EDA4C /* DweetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetModel.swift; sourceTree = "<group>"; };
+		A2BAC6A2213A019D003EDA4C /* DWColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWColors.swift; sourceTree = "<group>"; };
+		A2BAC6A4213A0366003EDA4C /* DweetGraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetGraphViewModel.swift; sourceTree = "<group>"; };
+		A2DFCFBB213B8397008DF926 /* DweetChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetChartViewController.swift; sourceTree = "<group>"; };
+		A2DFCFBE213CB770008DF926 /* DweetAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetAPIWorker.swift; sourceTree = "<group>"; };
+		A2DFCFC1213CD619008DF926 /* DweetEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetEndpoint.swift; sourceTree = "<group>"; };
+		AE157FE0621BA8DF5CEFBBB6 /* Pods_Dweety.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dweety.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4F05F4C86D591164AA90F8 /* Pods-Dweety.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dweety.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dweety/Pods-Dweety.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D56E85472281CC3A1BA1B1 /* Pods_Dweety.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEE6453A6FCFCC2A356A25F /* Pods_DweetyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +94,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7CD7698E51B95018AFE133 /* Pods_DweetyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286D8048F73170CF3A4BA211 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE4F05F4C86D591164AA90F8 /* Pods-Dweety.debug.xcconfig */,
+				9382C86FDB43CD5B8C33A544 /* Pods-Dweety.release.xcconfig */,
+				639FFDEEF1DE56938AAF97CB /* Pods-DweetyTests.debug.xcconfig */,
+				3F245DD78DF084CD12D64D11 /* Pods-DweetyTests.release.xcconfig */,
+				6F2140B50E1D5CC7F8759136 /* Pods-DweetyUITests.debug.xcconfig */,
+				21D039E5279475EB28914736 /* Pods-DweetyUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A27AB7D22139D8BE002C9826 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +121,8 @@
 				A27AB7F22139D8C0002C9826 /* DweetyTests */,
 				A27AB7FD2139D8C0002C9826 /* DweetyUITests */,
 				A27AB7DC2139D8BE002C9826 /* Products */,
+				286D8048F73170CF3A4BA211 /* Pods */,
+				FBF0FD7807710E6E889606D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +139,12 @@
 		A27AB7DD2139D8BE002C9826 /* Dweety */ = {
 			isa = PBXGroup;
 			children = (
+				A2DFCFBD213CB759008DF926 /* API Communication */,
+				A2BAC6A1213A017D003EDA4C /* Extensions */,
+				A2BAC69C2139F757003EDA4C /* View */,
+				A2BAC69B2139F74E003EDA4C /* Model */,
+				A2BAC69A2139F744003EDA4C /* View Model */,
 				A27AB7DE2139D8BE002C9826 /* AppDelegate.swift */,
-				A27AB7E02139D8BE002C9826 /* ViewController.swift */,
 				A27AB7E22139D8BE002C9826 /* Main.storyboard */,
 				A27AB7E52139D8C0002C9826 /* Assets.xcassets */,
 				A27AB7E72139D8C0002C9826 /* LaunchScreen.storyboard */,
@@ -125,6 +171,58 @@
 			path = DweetyUITests;
 			sourceTree = "<group>";
 		};
+		A2BAC69A2139F744003EDA4C /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2BAC6A4213A0366003EDA4C /* DweetGraphViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		A2BAC69B2139F74E003EDA4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2BAC69D2139F77A003EDA4C /* DweetResponseModel.swift */,
+				A2BAC69F2139FCD8003EDA4C /* DweetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A2BAC69C2139F757003EDA4C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2DFCFBB213B8397008DF926 /* DweetChartViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2BAC6A1213A017D003EDA4C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A2BAC6A2213A019D003EDA4C /* DWColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A2DFCFBD213CB759008DF926 /* API Communication */ = {
+			isa = PBXGroup;
+			children = (
+				A2DFCFBE213CB770008DF926 /* DweetAPIWorker.swift */,
+				A2DFCFC1213CD619008DF926 /* DweetEndpoint.swift */,
+			);
+			path = "API Communication";
+			sourceTree = "<group>";
+		};
+		FBF0FD7807710E6E889606D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE157FE0621BA8DF5CEFBBB6 /* Pods_Dweety.framework */,
+				512FB0F65F03430DA38FB7D9 /* Pods_DweetyTests.framework */,
+				60F15001A835AF74CAA2E986 /* Pods_DweetyUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27AB8032139D8C0002C9826 /* Build configuration list for PBXNativeTarget "Dweety" */;
 			buildPhases = (
+				BE425EC4C807D7F90C62A87E /* [CP] Check Pods Manifest.lock */,
 				A27AB7D72139D8BE002C9826 /* Sources */,
 				A27AB7D82139D8BE002C9826 /* Frameworks */,
 				A27AB7D92139D8BE002C9826 /* Resources */,
+				529E58E9A8CF483F4C192A4E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +249,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27AB8062139D8C0002C9826 /* Build configuration list for PBXNativeTarget "DweetyTests" */;
 			buildPhases = (
+				05BBA9221B740A212ABCF834 /* [CP] Check Pods Manifest.lock */,
 				A27AB7EB2139D8C0002C9826 /* Sources */,
 				A27AB7EC2139D8C0002C9826 /* Frameworks */,
 				A27AB7ED2139D8C0002C9826 /* Resources */,
@@ -167,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A27AB8092139D8C0002C9826 /* Build configuration list for PBXNativeTarget "DweetyUITests" */;
 			buildPhases = (
+				9189760CA7C7456F3EAE3819 /* [CP] Check Pods Manifest.lock */,
 				A27AB7F62139D8C0002C9826 /* Sources */,
 				A27AB7F72139D8C0002C9826 /* Frameworks */,
 				A27AB7F82139D8C0002C9826 /* Resources */,
@@ -251,12 +353,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05BBA9221B740A212ABCF834 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DweetyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		529E58E9A8CF483F4C192A4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Dweety/Pods-Dweety-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Faraday/Faraday.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Faraday.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dweety/Pods-Dweety-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9189760CA7C7456F3EAE3819 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DweetyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE425EC4C807D7F90C62A87E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dweety-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A27AB7D72139D8BE002C9826 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27AB7E12139D8BE002C9826 /* ViewController.swift in Sources */,
+				A2DFCFC2213CD619008DF926 /* DweetEndpoint.swift in Sources */,
+				A2BAC6A5213A0366003EDA4C /* DweetGraphViewModel.swift in Sources */,
+				A2DFCFBF213CB770008DF926 /* DweetAPIWorker.swift in Sources */,
+				A2DFCFBC213B8397008DF926 /* DweetChartViewController.swift in Sources */,
+				A2BAC6A02139FCD8003EDA4C /* DweetModel.swift in Sources */,
+				A2BAC69E2139F77A003EDA4C /* DweetResponseModel.swift in Sources */,
+				A2BAC6A3213A019D003EDA4C /* DWColors.swift in Sources */,
 				A27AB7DF2139D8BE002C9826 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,11 +619,13 @@
 		};
 		A27AB8042139D8C0002C9826 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE4F05F4C86D591164AA90F8 /* Pods-Dweety.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = Dweety/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,11 +639,13 @@
 		};
 		A27AB8052139D8C0002C9826 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9382C86FDB43CD5B8C33A544 /* Pods-Dweety.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 36C5PY3HAP;
 				INFOPLIST_FILE = Dweety/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,6 +659,7 @@
 		};
 		A27AB8072139D8C0002C9826 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639FFDEEF1DE56938AAF97CB /* Pods-DweetyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +681,7 @@
 		};
 		A27AB8082139D8C0002C9826 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F245DD78DF084CD12D64D11 /* Pods-DweetyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +703,7 @@
 		};
 		A27AB80A2139D8C0002C9826 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F2140B50E1D5CC7F8759136 /* Pods-DweetyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +724,7 @@
 		};
 		A27AB80B2139D8C0002C9826 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21D039E5279475EB28914736 /* Pods-DweetyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_Dweety {
+  umbrella header "Pods-Dweety-umbrella.h"
+
+  export *
+  module * { export * }
+}
