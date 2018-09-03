@@ -15,7 +15,6 @@
 		A27AB7E42139D8BE002C9826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E22139D8BE002C9826 /* Main.storyboard */; };
 		A27AB7E62139D8C0002C9826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E52139D8C0002C9826 /* Assets.xcassets */; };
 		A27AB7E92139D8C0002C9826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27AB7E72139D8C0002C9826 /* LaunchScreen.storyboard */; };
-		A27AB7F42139D8C0002C9826 /* DweetyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7F32139D8C0002C9826 /* DweetyTests.swift */; };
 		A27AB7FF2139D8C0002C9826 /* DweetyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27AB7FE2139D8C0002C9826 /* DweetyUITests.swift */; };
 		A2BAC69E2139F77A003EDA4C /* DweetResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC69D2139F77A003EDA4C /* DweetResponseModel.swift */; };
 		A2BAC6A02139FCD8003EDA4C /* DweetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAC69F2139FCD8003EDA4C /* DweetModel.swift */; };
@@ -60,7 +59,6 @@
 		A27AB7E82139D8C0002C9826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A27AB7EA2139D8C0002C9826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27AB7EF2139D8C0002C9826 /* DweetyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DweetyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A27AB7F32139D8C0002C9826 /* DweetyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetyTests.swift; sourceTree = "<group>"; };
 		A27AB7F52139D8C0002C9826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A27AB7FA2139D8C0002C9826 /* DweetyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DweetyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27AB7FE2139D8C0002C9826 /* DweetyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DweetyUITests.swift; sourceTree = "<group>"; };
@@ -158,7 +156,6 @@
 		A27AB7F22139D8C0002C9826 /* DweetyTests */ = {
 			isa = PBXGroup;
 			children = (
-				A27AB7F32139D8C0002C9826 /* DweetyTests.swift */,
 				A27AB7F52139D8C0002C9826 /* Info.plist */,
 			);
 			path = DweetyTests;
@@ -454,7 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A27AB7F42139D8C0002C9826 /* DweetyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
